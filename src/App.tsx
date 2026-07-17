@@ -11,8 +11,8 @@ import { Carrito } from './pages/Carrito';
 function Footer() {
   return (
     <footer className="footer">
-      <p>Nombre del Estudiante</p>
-      <p>correo.estudiante@inacapmail.cl</p>
+      <p>Constanza Beatriz Cortés Sepúlveda</p>
+      <p>constanza.cortes28@inacapmail.cl</p>
     </footer>
   );
 }
