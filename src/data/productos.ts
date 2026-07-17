@@ -1,0 +1,106 @@
+import type { Producto } from '../types';
+import { rutaPublica } from '../services/rutaPublica';
+
+// Productos iniciales de la tienda "GameZone".
+// Puedes reemplazar las URLs de imagen por las que tú quieras.
+export const productosIniciales: Producto[] = [
+  {
+    id: 'p1',
+    nombre: 'PlayStation 5 Slim',
+    categoria: 'Consolas',
+    descripcion:
+      'Consola de nueva generación con SSD ultra rápido, soporte 4K y control DualSense incluido.',
+    imagenes: [rutaPublica('/Productos/Ps51.png'), rutaPublica('/Productos/Ps52.png')],
+    precio: 549990,
+    precioOferta: 499990,
+    stock: 8,
+    destacado: true,
+  },
+  {
+    id: 'p2',
+    nombre: 'Xbox Series X',
+    categoria: 'Consolas',
+    descripcion:
+      'La consola Xbox más potente hasta la fecha, con 1TB de almacenamiento y soporte para juegos en 4K a 120fps.',
+    imagenes: [rutaPublica('/Productos/xbox1.png'), rutaPublica('/Productos/xbox2.png')],
+    precio: 579990,
+    stock: 5,
+  },
+  {
+    id: 'p3',
+    nombre: 'The Legend of Zelda: Tears of the Kingdom',
+    categoria: 'Juegos',
+    descripcion:
+      'Secuela de Breath of the Wild para Nintendo Switch. Explora Hyrule desde los cielos hasta las profundidades.',
+    imagenes: [rutaPublica('/Productos/Zelda1.png'), rutaPublica('/Productos/Zelda2.png')],
+    precio: 59990,
+    stock: 15,
+    destacado: true,
+  },
+  {
+    id: 'p4',
+    nombre: 'God of War Ragnarök',
+    categoria: 'Juegos',
+    descripcion: 'Kratos y Atreus enfrentan el Ragnarök en esta épica aventura nórdica para PS5.',
+    imagenes: [rutaPublica('/Productos/godOfWard1.png'), rutaPublica('/Productos/godOfWard2.png')],
+    precio: 54990,
+    precioOferta: 44990,
+    stock: 12,
+  },
+  {
+    id: 'p5',
+    nombre: 'EA Sports FC 26',
+    categoria: 'Juegos',
+    descripcion: 'El simulador de fútbol más jugado del mundo, con licencias oficiales y modo carrera renovado.',
+    imagenes: [rutaPublica('/Productos/FC261.png'), rutaPublica('/Productos/FC262.png')],
+    precio: 49990,
+    stock: 20,
+  },
+  {
+    id: 'p6',
+    nombre: 'Control DualSense Blanco',
+    categoria: 'Accesorios',
+    descripcion: 'Control inalámbrico oficial para PS5 con retroalimentación háptica y gatillos adaptativos.',
+    imagenes: [rutaPublica('/Productos/Control1.png'), rutaPublica('/Productos/Control2.png')],
+    precio: 59990,
+    stock: 25,
+    destacado: true,
+  },
+  {
+    id: 'p7',
+    nombre: 'Audífonos Gamer HyperX Cloud II',
+    categoria: 'Accesorios',
+    descripcion: 'Audífonos con sonido envolvente 7.1 y micrófono desmontable, compatibles con PC y consolas.',
+    imagenes: [rutaPublica('/Productos/audifonos1.png'), rutaPublica('/Productos/audifonos2.png')],
+    precio: 79990,
+    precioOferta: 64990,
+    stock: 10,
+  },
+  {
+    id: 'p8',
+    nombre: 'Pase de Batalla Fortnite - Temporada Actual',
+    categoria: 'Pases de Batalla',
+    descripcion: 'Desbloquea skins, emotes y recompensas exclusivas durante toda la temporada.',
+    imagenes: [rutaPublica('/Productos/Fornite1.png'), rutaPublica('/Productos/Fornite2.png')],
+    precio: 9990,
+    stock: 100,
+  },
+  {
+    id: 'p9',
+    nombre: 'Gift Card PlayStation Store $20.000',
+    categoria: 'Gift Cards',
+    descripcion: 'Tarjeta de regalo digital para comprar juegos, DLC y suscripciones en PlayStation Store.',
+    imagenes: [rutaPublica('/Productos/GiftCardPSN1.png'), rutaPublica('/Productos/GiftCardPSN2.png')],
+    precio: 20000,
+    stock: 50,
+  },
+  {
+    id: 'p10',
+    nombre: 'Gift Card Xbox $30.000',
+    categoria: 'Gift Cards',
+    descripcion: 'Tarjeta de regalo digital para la tienda de Xbox y Xbox Game Pass.',
+    imagenes: [rutaPublica('/Productos/GiftCardXbox1.png'), rutaPublica('/Productos/GiftCardXbox2.png')],
+    precio: 30000,
+    stock: 50,
+  },
+];
