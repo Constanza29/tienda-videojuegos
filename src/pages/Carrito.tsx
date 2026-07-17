@@ -48,7 +48,7 @@ export function Carrito() {
           Debes <Link to="/login">iniciar sesión</Link> para poder confirmar la compra.
         </p>
       )}
-
+    <div className="tabla-carrito-contenedor">
       <table className="tabla-carrito">
         <thead>
           <tr>
@@ -103,6 +103,7 @@ export function Carrito() {
           })}
         </tbody>
       </table>
+    </div>
 
       <div className="resumen-carrito">
         {descuentoAplicado && (
